@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SingTour</string>
+    <string name="email">Email address</string>
+    <string name="password">Password</string>
+    <string name="button_login">Login</string>
+    <string name="button_register">Register</string>
+
+    <string name="place">Places</string>
+    <string name="refund">Refund</string>
+    <string name="guide">Guide</string>
+
+    <string name="night_safari">The Night Safari is the world\'s first nocturnal zoo and is one of the most popular tourist attractions in Singapore.\n\nUnlike traditional nocturnal houses, which reverse the day-night cycle of animals so they will be active by day, the Night Safari is an entire open-air zoo set in a humid tropical forest that is only open at night. It is divided into seven geographical zones, which can be explored either on foot via four walking trails, or by tram.
+</string>
+</resources>

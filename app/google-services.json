@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "787537760652",
+    "firebase_url": "https://singtour-56d0a.firebaseio.com",
+    "project_id": "singtour-56d0a",
+    "storage_bucket": "singtour-56d0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787537760652:android:7e5c17c911c345a8",
+        "android_client_info": {
+          "package_name": "com.example.joellim.singtour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787537760652-vqd7vdi9f233c5blj59ka9745uvj80iq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.joellim.singtour",
+            "certificate_hash": "34b8ac075f92b51eed45334e94b85086b61e7c1a"
+          }
+        },
+        {
+          "client_id": "787537760652-vs02hi4hqfdh5usr4jfua9kuapp8ne6h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVQCJxBPzy2Ko0CiLUxwiOi4bXLLsHlSc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787537760652-vs02hi4hqfdh5usr4jfua9kuapp8ne6h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
