@@ -12,14 +12,10 @@ public class Payment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
+    }
 
-        ImageView imgFavorite = (ImageView) findViewById(R.id.imageView15);
-        imgFavorite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Payment.this, Receipt.class);
-                startActivity(intent);
-            }
-        });
+    public void confirm(View v){
+        Intent intent = new Intent(this,Receipt.class);
+        startActivity(intent);
     }
 }

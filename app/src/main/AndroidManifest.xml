@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.joellim.singtour">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -40,7 +42,13 @@
         <activity
             android:name=".Payment"
             android:parentActivityName=".Confirm" />
-        <activity android:name=".Receipt" android:parentActivityName=".Payment"></activity>
+        <activity
+            android:name=".Receipt"
+            android:parentActivityName=".Payment" />
+        <activity
+            android:name=".Register"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".RefundThanks"></activity>
     </application>
 
 </manifest>

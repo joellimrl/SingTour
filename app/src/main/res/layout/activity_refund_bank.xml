@@ -69,7 +69,7 @@
         android:id="@+id/button10"
         android:layout_width="307dp"
         android:layout_height="wrap_content"
-        android:onClick="backToMain"
+        android:onClick="next"
         android:text="Refund"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

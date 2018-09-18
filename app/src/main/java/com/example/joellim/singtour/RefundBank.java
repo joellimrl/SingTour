@@ -13,8 +13,8 @@ public class RefundBank extends AppCompatActivity {
         setContentView(R.layout.activity_refund_bank);
     }
 
-    public void backToMain(View view){
-        Intent intent = new Intent(this, MainMenu.class);
+    public void next(View view){
+        Intent intent = new Intent(this, RefundThanks.class);
         startActivity(intent);
     }
 }
