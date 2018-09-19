@@ -19,8 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainMenu"
-            android:parentActivityName=".MainActivity" />
+            android:name=".MainMenu"/>
         <activity
             android:name=".Guide"
             android:parentActivityName=".MainMenu" />
@@ -42,13 +41,18 @@
         <activity
             android:name=".Payment"
             android:parentActivityName=".Confirm" />
-        <activity
-            android:name=".Receipt"
-            android:parentActivityName=".Payment" />
+        <activity android:name=".Receipt" />
         <activity
             android:name=".Register"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".RefundThanks"></activity>
+        <activity android:name=".RefundThanks" />
+        <activity android:name=".PaymentLoading" />
+        <activity android:name=".Print" />
+        <activity android:name=".Account" />
+        <activity android:name=".About" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
     </application>
 
 </manifest>

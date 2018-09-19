@@ -1,27 +1,39 @@
 package com.example.joellim.singtour;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
-public class Payment extends AppCompatActivity {
+public class Account extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
+        setContentView(R.layout.activity_account);
+        setupActionBar();
     }
 
-    public void confirm(View v){
-        Intent intent = new Intent(this,PaymentLoading.class);
+    private void setupActionBar() {
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            // Show the Up button in the action bar.
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+    }
+
+    public void settings(View v){
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+
+    public void logout(View v){
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
 
@@ -44,10 +56,6 @@ public class Payment extends AppCompatActivity {
                 intent = new Intent(this, Print.class);
                 break;
 
-            case R.id.account:
-                intent = new Intent(this, Account.class);
-                break;
-
             case R.id.settings:
                 intent = new Intent(this, SettingsActivity.class);
                 break;
@@ -56,6 +64,10 @@ public class Payment extends AppCompatActivity {
                 intent = new Intent(this, MainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 break;
+
+            case android.R.id.home:
+                this.finish();
+                return true;
 
             default:
                 return super.onOptionsItemSelected(item);

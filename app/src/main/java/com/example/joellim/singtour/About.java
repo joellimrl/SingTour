@@ -3,26 +3,21 @@ package com.example.joellim.singtour;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
-public class Payment extends AppCompatActivity {
+public class About extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
+        setContentView(R.layout.activity_about);
     }
 
-    public void confirm(View v){
-        Intent intent = new Intent(this,PaymentLoading.class);
-        startActivity(intent);
+    public void close(View v){
+        finish();
     }
 
     @Override
@@ -36,10 +31,6 @@ public class Payment extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Intent intent;
         switch (item.getItemId()) {
-            case R.id.about:
-                intent = new Intent(this, About.class);
-                break;
-
             case R.id.print:
                 intent = new Intent(this, Print.class);
                 break;
@@ -63,4 +54,6 @@ public class Payment extends AppCompatActivity {
         startActivity(intent);
         return true;
     }
+
+
 }

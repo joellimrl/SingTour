@@ -1,12 +1,15 @@
 package com.example.joellim.singtour;
 
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 public class Receipt extends AppCompatActivity {
+
+    Boolean temp = Boolean.TRUE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +22,22 @@ public class Receipt extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Receipt.this, MainMenu.class);
                 startActivity(intent);
+                temp = Boolean.FALSE;
             }
         });
+
+        CountDownTimer cd = new CountDownTimer(3000,1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+            }
+
+            @Override
+            public void onFinish() {
+                if (temp){
+                    Intent intent = new Intent(Receipt.this, MainMenu.class);
+                    startActivity(intent);
+                }
+            }
+        }.start();
     }
 }
