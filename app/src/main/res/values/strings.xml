@@ -10,7 +10,7 @@
     <string name="guide">Guide</string>
     <string name="thanks">An email will be sent to you once the verification is complete!</string>
 
-    <string name="about">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="about">SingTour is an application that helps tourist to buy tickets easily. Through our application, visitors can buy tickets at all the MRT stations in Singapore and also through their mobile devices. Our app also provides a guide that can show the places that you as a visitor can visit in Singapore.</string>
     <string name="night_safari">The Night Safari is the world\'s first nocturnal zoo and is one of the most popular tourist attractions in Singapore.\n\nUnlike traditional nocturnal houses, which reverse the day-night cycle of animals so they will be active by day, the Night Safari is an entire open-air zoo set in a humid tropical forest that is only open at night. It is divided into seven geographical zones, which can be explored either on foot via four walking trails, or by tram.
 </string>
     <string name="title_activity_settings">Settings</string>
