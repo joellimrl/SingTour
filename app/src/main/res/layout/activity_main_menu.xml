@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/singapore_background"
     tools:context=".MainMenu">
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="304dp"
-        android:layout_height="118dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
         android:onClick="places"
         android:text="@string/place"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -20,10 +22,11 @@
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="304dp"
-        android:layout_height="118dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
         android:onClick="guide"
         android:text="@string/guide"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -32,10 +35,11 @@
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="304dp"
-        android:layout_height="118dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
         android:onClick="refund"
         android:text="@string/refund"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

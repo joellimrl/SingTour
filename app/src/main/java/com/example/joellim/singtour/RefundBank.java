@@ -1,6 +1,9 @@
 package com.example.joellim.singtour;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -19,6 +22,9 @@ public class RefundBank extends AppCompatActivity {
     public void next(View view){
         Intent intent = new Intent(this, RefundThanks.class);
         startActivity(intent);
+        Intent i = new Intent("refund");
+        sendBroadcast(i);
+        finish();
     }
 
     @Override

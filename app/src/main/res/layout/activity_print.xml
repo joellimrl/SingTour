@@ -10,7 +10,7 @@
         android:id="@+id/imageView15"
         android:layout_width="305dp"
         android:layout_height="221dp"
-        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintBottom_toTopOf="@+id/print"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,9 +18,10 @@
         app:srcCompat="@drawable/refund" />
 
     <Button
-        android:id="@+id/button11"
+        android:id="@+id/print"
         android:layout_width="206dp"
         android:layout_height="73dp"
+        android:onClick="print"
         android:text="Print"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

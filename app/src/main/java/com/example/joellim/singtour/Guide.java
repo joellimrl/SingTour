@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 public class Guide extends AppCompatActivity {
 
@@ -13,6 +16,23 @@ public class Guide extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guide);
+
+        WebView wv = (WebView) findViewById(R.id.webview);
+        WebSettings webSettings = wv.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        wv.loadUrl("http://www.visitsingapore.com/singapore-itineraries/best-of-singapore-in-7-days/");
+    }
+
+    public void maps(View v){
+        Intent intent = new Intent(this,MapsActivity.class);
+        startActivity(intent);
+    }
+
+    public void grab(View v){
+        Intent launchIntent = getPackageManager().getLaunchIntentForPackage("com.grabtaxi.passenger");
+        if (launchIntent != null){
+            startActivity(launchIntent);
+        }
     }
 
     @Override

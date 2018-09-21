@@ -20,8 +20,7 @@ public class Receipt extends AppCompatActivity {
         imgFavorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Receipt.this, MainMenu.class);
-                startActivity(intent);
+                finish();
                 temp = Boolean.FALSE;
             }
         });
@@ -34,8 +33,7 @@ public class Receipt extends AppCompatActivity {
             @Override
             public void onFinish() {
                 if (temp){
-                    Intent intent = new Intent(Receipt.this, MainMenu.class);
-                    startActivity(intent);
+                    finish();
                 }
             }
         }.start();

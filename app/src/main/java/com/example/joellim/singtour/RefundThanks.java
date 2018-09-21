@@ -21,8 +21,7 @@ public class RefundThanks extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                Intent intent = new Intent(RefundThanks.this, MainMenu.class);
-                startActivity(intent);
+                finish();
             }
         }.start();
     }
